@@ -1,0 +1,55 @@
+{% include 'header.html' %}
+
+<br>
+<form method="post" action="/store" enctype="multipart/form-data">
+    
+    <div class="card">
+        <div class="card-header">
+            Ingresar pacientes
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Datos del paciente</h5>
+            <p class="card-text">
+                
+                 <div class="form-group">
+                    <label for="txtNombre">Nombre:</label>
+                    <input id="txtNombre" class="form-control" type="text" name="txtNombre">
+                 </div>   
+            
+                
+
+                <div class="form-group">
+                    <label for="txtCi">Ci:</label>
+                    <input id="txtCi" class="form-control" type="text" name="txtCi">
+                </div>
+
+                
+
+
+                <div class="form-group">
+                    <label for="txtEdad">Edad:</label>
+                    <input id="txtEdad" class="form-control" type="text" name="txtEdad">
+                </div>
+                
+
+
+                <div class="form-group">
+                    <label for="txtDiagnostico">Diagnostico:</label>
+                    <input id="txtDiagnostico" class="form-control" type="text" name="txtDiagnostico">
+                </div>
+                
+                <div class="form-group">
+                    <input type="submit" class="btn btn-success" value="Agregar">
+                    <a href="{{url_for('index')}}" class="btn btn-primary">Regresar</a>
+                </div>
+                <br>
+                
+            </p>
+        </div>
+    </div>
+
+    
+
+
+</form>
+{% include 'footer.html' %}
